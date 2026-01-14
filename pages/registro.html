@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <!--ÍCONES-->
+    <link rel="icon" href="../assets/icons/favicon.ico">
+    <link rel="icon" type="imagem/png" sizes="16X16" href="../assets/icons/favicon-16x16.png">
+    <link rel="icon" type="imagem/png" sizes="32X32" href="../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="imagem/png" href="../assets/icons/android-chrome-192x192.png">
+    <link rel="icon" type="imagem/png" href="../assets/icons/android-chrome-512x512.png">
+    <link rel="apple-touch-icon"  href="../wwassets/icons/apple-touch-icon.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <a href="../index.html">Voltar</a>
+    <button onclick="abrirModal()">Entrar</button>
+
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            
+            <div class="tabs">
+                <button onclick="mostrarLogin()">Entrar</button>
+                <button onclick="mostrarRegistro()">Registrar</button>
+            </div>
+
+                    <!--LOGIN-->
+                <form id="LoginForm">
+                    <input type="email" placeholder="Dígite seu Email:">
+                    <input type="password" placeholder="Digíte sua Senha:">
+                    <button type="submit">Entrar</button>
+                </form>
+
+                    <!--REGISTRO-->
+                <form id="registroForm" style="display: none;">
+                    <input type="text" placeholder="Nome de Usuário:">
+                    <input type="email" placeholder="Dígite seu E-Mail:">
+                    <input type="password" placeholder="Crie sua Senha:">
+                    <button type="submit">Criar Conta</button>
+                </form>    
+
+                <button onclick="fecharModal()">Fechar</button>    
+        </div>
+    </div>
+</body>
+</html>
